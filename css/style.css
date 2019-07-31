@@ -118,6 +118,7 @@ h1 {
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.4s;
 }
 
 .btn-primary:hover {
@@ -135,6 +136,7 @@ h1 {
     border: 1px solid #cbdbe8;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.4s;
 }
 
 .btn-secondary:hover {
@@ -157,6 +159,7 @@ h1 {
     border: 1px solid #dce1e5;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.4s;
 }
 
 .btn-info:hover {
@@ -203,11 +206,117 @@ h1 {
     height: 69px;
 }
 
+.grid {
+    display: grid;
+    grid-template-areas: "a c d"
+                         "b c d"
+                         "b f g"
+                         "e f g"
+                         "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    text-align: center;
+    box-shadow: 5px 10px 10px #f4f4f4;
+    border-radius: 14px;
+    padding: 43px 46px 53px;
+}
+
+.grid-icon {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 92px;
+    display: block;
+    margin: 0 auto 21px;
+}
+
+.grid-title {
+    grid-area: a;
+}
+
+.grid-item-1 {
+    grid-area: b;
+}
+
+.grid-item-2 {
+    grid-area: c;
+}
+
+.grid-item-3 {
+    grid-area: d;
+}
+
+.grid-item-4 {
+    grid-area: e;
+}
+
+.grid-item-5 {
+    grid-area: f;
+}
+
+.grid-item-6 {
+    grid-area: g;
+}
+
+.grid-text {
+    grid-area: h;
+    padding-left: 44px;
+}
+
+.grid-text p {
+    margin-top: 30px;
+}
+
+.grid-text p:nth-child(2) {
+    color: #1085e4;
+    font-size: 14px;
+}
+
+.grid-text p span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
+} 
+
+.grid-icon-1 {
+    background-image: url(../img/hand-icon.png);
+    background-size: 79px 82px;
+}
+
+.grid-icon-2 {
+    background-image: url(../img/document-icon.png);
+    background-size:73px 79px;
+}
+
+.grid-icon-3 {
+    background-image: url(../img/tools-icon.png);
+    background-size: 83px 85px;
+}
+
+.grid-icon-4 {
+    background-image: url(../img/gear-icon.png);
+    background-size: 103px 92px;
+}
+
+.grid-icon-5 {
+    background-image: url(../img/design-icon.png);
+    background-size: 85px 90px;
+}
+
+.grid-icon-6 {
+    background-image: url(../img/support-icon.png);
+    background-size: 100px 87px;
+}
+
 .grid h2 {
     font-size: 40px;
     font-weight: 700;
     color: #192b59;
-}
+} 
 
 .grid h2 span{
     font-size: 14px;
@@ -220,12 +329,22 @@ h1 {
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
-}
+} 
 
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
     color: #1085e4;
+}
+
+.subscribe-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-subscribe {
+    text-align: left;
 }
 
 .page-subscribe h2 span {
@@ -239,12 +358,118 @@ h1 {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
+    margin-top: 0px;
+    margin-bottom:25px;
 }
 
 .page-subscribe p {
     font-size: 18px;
     font-weight: 400;
     color: #dfe8ff;
+    width: 65%;
+}
+
+.img-subscribe {
+    width: 354px;
+    height: 417px;
+}
+
+.box-subscribe-user {
+    position: relative;
+}
+
+.box-subscribe-user input {
+    border: 2px solid #3f5cb1;
+    font-size: 14px;
+    border-radius: 45px;
+    background-color: transparent;
+    color: #fff;
+    padding: 25px 230px 25px 37px;
+    box-sizing: border-box;
+    display: block;
+    width: 84%;
+}
+
+.box-subscribe-user input:focus, .box-subscribe-user .btn-primary {
+    outline: none;
+}
+
+.box-subscribe-user input::-webkit-input-placeholder {color: #b1c3ee}
+.box-subscribe-user input::-moz-input-placeholder {color: #b1c3ee}
+.box-subscribe-user input:-moz-input-placeholder {color: #b1c3ee}
+.box-subscribe-user input:-ms-input-placeholder {color: #b1c3ee}
+
+.box-subscribe-user .btn-primary {
+    position: absolute;
+    top: 8px;
+    right: 112px;
+    padding: 18px 52px;
+}
+
+.box-subscribe-user .btn-primary:hover {
+    background-color: transparent;
+    color: #fff;
+}
+
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.software-img {
+    background-image: url(../img/grub-pic.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 122px;
+    left: -122px;
+    width: 931px;
+    height: 760px;
+}
+
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+
+.page-software-icon {
+    display: block;
+    position: absolute;
+    top: 116px;
+    left: 760px;
+    background-image: url(../img/software-icon.png);
+    background-repeat: no-repeat;
+    width: 115px;
+    height: 97px;
+}
+
+.page-software .title-h2 {
+    max-width: 550px;
+    margin-top: 12px;
+    margin-bottom: 26px;
+}
+
+.page-software-list {
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.page-software-list::-webkit-scrollbar { width: 4px; height: 4px;}
+.page-software-list::-webkit-scrollbar-button {  background-color: #1085e4; }
+.page-software-list::-webkit-scrollbar-track-piece { background-color: #f5faff;}
+.page-software-list::-webkit-scrollbar-thumb {height: 50px; background-color: #1085e4; border-radius: 10px;}
+
+.page-software-list dt {
+    font-weight: 700;
+    color: #5a6789;
+    margin-bottom: 10px;
+}
+
+.page-software-list dd {
+    margin-left: 0;
+    margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 1.8;
 }
 
 .list-stat {
@@ -410,15 +635,12 @@ h1 {
     padding: 106px 0 99px;
 }
 
-.page-stat, .page-screen {
-    background-color: #edf6ff;
-}
-
-.page-stat {
-    padding: 116px 0 96px 0;
+.page-grid {
+    padding: 84px 0 75px;
 }
 
 .page-subscribe {
+    padding: 55px 0 50px 0;
     background: rgba(10,32,144,1);
     background: -moz-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(10,32,144,1)), color-stop(100%, rgba(35,120,205,1)));
@@ -427,6 +649,22 @@ h1 {
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+
+.page-software {
+    position: relative;
+    padding: 208px 0px 167px;
+    background-image: url(../img/grub-bg.png);
+    background-repeat: no-repeat;
+    background-position: -124px 0;
+}
+
+.page-stat, .page-screen {
+    background-color: #edf6ff;
+}
+
+.page-stat {
+    padding: 116px 0 96px 0;
 }
 
 .page-plan, .page-screen {

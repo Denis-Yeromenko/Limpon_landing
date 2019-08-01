@@ -55,6 +55,10 @@ h1 {
     letter-spacing: 3.5px;
 }
 
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
+
 .wrap {
     max-width: 1110px;
     margin: 0 auto;
@@ -441,7 +445,7 @@ h1 {
     height: 97px;
 }
 
-.page-software .title-h2 {
+.page-software .title-h2, .page-analitycs .title-h2{
     max-width: 550px;
     margin-top: 12px;
     margin-bottom: 26px;
@@ -495,6 +499,71 @@ h1 {
     color: #bacbdc;
     margin-bottom: 23px;
     letter-spacing:0;
+}
+
+.content-app {
+    width: 55%;
+}
+
+.page-app-text {
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #c4d2dd;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;
+}
+
+.page-app-list {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7px;
+}
+
+.page-app-android {
+    display: block;
+    background-image: url(../img/google-btn.png);
+    background-repeat: no-repeat;
+    width: 161px;
+    height: 53px;
+}
+
+.page-app-ios {
+    display: block;
+    background-image: url(../img/app-store-btn.png);
+    background-repeat: no-repeat;
+    width: 153px;
+    height: 53px;
+    margin-left: 29px;
+}
+
+.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;;
+}
+
+.flex-analitycs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.flex-analitycs>div {
+    flex-basis: 53%;
+}
+
+.page-software-icon.icon-analitycs {
+    top: -73px;
+    left: 501px;
+}
+
+.page-analitycs-text {
+ margin-bottom: 54px;
 }
 
 .screen {
@@ -665,6 +734,21 @@ h1 {
 
 .page-stat {
     padding: 116px 0 96px 0;
+}
+
+.page-app {
+    padding: 69px 0 82px;
+}
+
+.page-app .wrap {
+    position: relative;
+}
+
+.page-analitycs {
+    background-image: url(../img/limp-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 117px 0 137px;
 }
 
 .page-plan, .page-screen {

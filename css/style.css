@@ -566,9 +566,86 @@ h1 {
  margin-bottom: 54px;
 }
 
+.page-software-icon.icon-second-analitycs {
+    top: -48px;
+    left: -25px;
+}
+
+.page-second-analitycs .title-h2 {
+    margin-bottom: 26px;
+}
+
+.page-second-analitycs .flex-analitycs>div {
+    flex-basis: 54%;
+}
+
+.page-second-analitycs .btn-primary {
+    padding: 20px 66px;
+}
+
 .screen {
     margin-top: 36px;
     margin-bottom: -7px;
+}
+
+.page-clients .title-40 {
+    color: #fff;
+}
+
+.page-clients .title-40 span {
+    color: #85c8ff;
+}
+
+.box-clients {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 63px;
+}
+
+.box-clients-item {
+    flex-basis: 31.5%;
+    background-color: #fff;
+    font-size: 14px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 10px 10px #f4f4f4;
+    padding: 21px 42px;
+} 
+
+.box-clients-item>p {
+    margin-bottom: 4px;
+}
+
+.box-info {
+    display: flex;
+    align-items: center;
+}
+
+.box-info img {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.box-info>div {
+    padding-left: 17px;
+}
+
+.box-clients-item .name {
+    color: #000958;
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    margin-bottom: 0;
+}
+
+.box-clients-item .position {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.9px;
+    margin-top: 4px;
 }
 
 .box-price {
@@ -693,6 +770,7 @@ h1 {
     background-image: url(../img/header-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 53px 0 330px;
     position: relative;
 }
@@ -701,6 +779,7 @@ h1 {
     background-image: url(../img/logo-line-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     padding: 106px 0 99px;
 }
 
@@ -724,6 +803,7 @@ h1 {
     position: relative;
     padding: 208px 0px 167px;
     background-image: url(../img/grub-bg.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-position: -124px 0;
 }
@@ -746,9 +826,18 @@ h1 {
 
 .page-analitycs {
     background-image: url(../img/limp-bg.png);
+    padding: 117px 0 137px;
+}
+
+.page-second-analitycs {
+    background-image: url(../img/easy-bg.png);
+    padding: 167px 0 120px;
+}
+
+.page-analitycs, .page-second-analitycs {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 117px 0 137px;
+    background-position: center;
 }
 
 .page-plan, .page-screen {
@@ -756,5 +845,24 @@ h1 {
 }
 
 .page-screen {
-    padding: 116px 0 0px 0;
+    padding: 116px 0 0;
+}
+
+.page-clients {
+    position: relative;
+    padding-top: 43px;
+    margin-top: 129px;
+}
+
+.page-clients::before {
+    content: '';
+    display: block;
+    background-image: url(../img/client-bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
 }

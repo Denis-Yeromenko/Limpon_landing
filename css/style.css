@@ -588,11 +588,11 @@ h1 {
     margin-bottom: -7px;
 }
 
-.page-clients .title-40 {
+.page-clients .title-40, .page-team .title-40 {
     color: #fff;
 }
 
-.page-clients .title-40 span {
+.page-clients .title-40 span, .page-team .title-40 span {
     color: #85c8ff;
 }
 
@@ -648,12 +648,69 @@ h1 {
     margin-top: 4px;
 }
 
+.box-team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+}
+
+.box-team-item {
+    flex-basis: 31.5%;
+    background-color: #fff;
+    box-shadow: 0px 5px 6px #f4f4f4;
+    position: relative;
+    padding: 193px 0 42px;
+}
+
+.box-team-item .Avatar {
+    position: absolute;
+    top: -86px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.box-team-item .position {
+    color: #1085e4;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2.1px;
+    margin-bottom: 0;
+}
+
+.box-team-item .name {
+    color: #000958;
+    font-size: 26px;
+    font-weight: 600;
+    letter-spacing: -0.8px;
+    line-height: 1.1;
+    margin-top: 8px;
+}
+.box-team-item .btn-more {
+    border-radius: 50%;
+    border: none;
+    background-color: #f3f3f3;
+    font-size: 30px;
+    font-weight: 700;
+    color: #a1aecf;
+    padding: 5px 15px;
+}
+
+.box-team-item .btn-more:focus {
+    outline: none;
+}
+
 .box-price {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 80px;
+    margin-top: 83px;
+}
+
+.box-price .btn-primary {
+    padding: 20px 60px;
 }
 
 .box-price-item {
@@ -692,7 +749,7 @@ h1 {
 }
 
 .box-price-item:first-child h3 {
-    margin-bottom: 35px;
+    margin-bottom: 17px;
 }
 
 .box-price-item h3 span:first-child {
@@ -712,8 +769,8 @@ h1 {
     list-style-type: none;
     text-align: center;
     padding-left: 0;
-    margin-top: 37px;
-    margin-bottom: 52px;
+    margin-top: 36px;
+    margin-bottom: 63px;
 }
 
 .box-price-item ul li{
@@ -844,6 +901,10 @@ h1 {
     text-align: center;
 }
 
+.page-plan {
+    padding: 81px 0 131px;
+}
+
 .page-screen {
     padding: 116px 0 0;
 }
@@ -865,4 +926,13 @@ h1 {
     left: 0;
     top: 0;
     z-index: -1;
+}
+
+.page-team {
+    text-align: center;
+    background-image: url(../img/team-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 82px 0 20px;
 }

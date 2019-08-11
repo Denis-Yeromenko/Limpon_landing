@@ -703,50 +703,50 @@ h1 {
     transition: 0.3s;
 }
 
-.box-team-item .btn-team span {
+.box-team-item .btn-team span, .footer-social .btn-team span {
     background-image: url(/img/btn-team.png);
     background-repeat: no-repeat;
     display: block;
     margin: 0 auto;
 }
 
-.box-team-item .btn-fb span {
+.box-team-item .btn-fb span, .footer-social .btn-fb span  {
     background-position: 0px 4px;
     width: 20px;
     height: 29px;
 }
 
-.box-team-item .btn-fb:hover  span{
+.box-team-item .btn-fb:hover span, .footer-social .btn-fb:hover  span {
     background-position: 0px -19px;
 }
 
-.box-team-item .btn-tw span {
+.box-team-item .btn-tw span, .footer-social .btn-tw span {
     background-position: -18px 4px;
     width: 20px;
     height: 29px;
 }
 
-.box-team-item .btn-tw:hover  span{
+.box-team-item .btn-tw:hover  span, .footer-social .btn-tw:hover  span{
     background-position: -18px -19px;
 }
 
-.box-team-item .btn-be span {
+.box-team-item .btn-be span,  .footer-social .btn-be span {
     background-position: -41px 4px;
     width: 20px;
     height: 29px;
 }
 
-.box-team-item .btn-be:hover  span{
+.box-team-item .btn-be:hover  span, .footer-social .btn-be:hover span {
     background-position: -41px -19px;
 }
 
-.box-team-item .btn-web span {
+.box-team-item .btn-web span, .footer-social .btn-web span {
     background-position: -64px 4px;
     width: 20px;
     height: 29px;
 }
 
-.box-team-item .btn-web:hover  span{
+.box-team-item .btn-web:hover  span, .footer-social .btn-web:hover span {
     background-position: -64px -19px;
 }
 
@@ -761,7 +761,7 @@ h1 {
     transition: 0.3s;
 }
 
-.box-team-item .btn-more:hover, .btn-team:hover {
+.box-team-item .btn-more:hover, .box-team-item .btn-team:hover {
     background-color: #1a88e1;
     color: #fff;
     box-shadow: 5px 10px 10px #dbdbdb;
@@ -1034,6 +1034,46 @@ h1 {
     margin-right: 60px;
 }
 
+.footer>div {
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+.footer-text {
+    font-size: 16px;
+    margin-top: 26px;
+}
+
+.footer-text>a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #1085e4;
+}
+
+
+.footer-social {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+}
+
+.footer-social .btn-team {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.footer-social .btn-team:hover {
+    color: #fff;
+}
+
 /* PAGE */
 
 .page-stat .title-h2, .page-screen .title-h2 {
@@ -1166,4 +1206,8 @@ h1 {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 70px 0 121px;
+}
+
+.footer {
+    background-color: #192b59;
 }

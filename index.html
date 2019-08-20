@@ -112,6 +112,14 @@
 						<a href="" class="btn-free btn-primary">Free trail</a>
 					</li>
 				</ul>
+				<button class="btn-menu" type="button">
+					<?xml version="1.0" encoding="UTF-8"?>
+					<svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+							<path d="m491.32 235.32h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682z"/>
+							<path d="m491.32 78.439h-470.64c-11.422 0-20.682 9.26-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.26 20.682-20.682s-9.259-20.682-20.682-20.682z"/>
+							<path d="m491.32 392.2h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/>
+					</svg>
+				</button>
 			</nav>
 			<div class="wrap">
 				<h1>
@@ -647,6 +655,20 @@
 				</ul>
 			</div>
 		</footer>
+		<div class="modal">
+			<button class="btn-close" type="button"><span>&times;</span></button>
+			<ul class="nav-modal">
+				<li><a href="" class="nav-item">Home</a></li>
+				<li><a href="" class="nav-item">Features</a></li>
+				<li><a href="" class="nav-item">Video</a></li>
+				<li><a href="" class="nav-item">Screens</a></li>
+				<li><a href="" class="nav-item">Pricing</a></li>
+				<li><a href="" class="nav-item">Team</a></li>
+				<li>
+					<a href="" class="btn-free btn-primary">Free trail</a>
+				</li>
+			</ul>
+		</div>
 		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script>
 			$(document).ready(function(){
@@ -661,6 +683,12 @@
 			  $(".btn-thomas").click(function(){
 				$(".btn-thomas").hide();
 				$(".social-thomas").fadeIn();
+			  });
+			  $('.btn-menu').click(function() {
+				  $('.modal').show()
+			  });
+			  $('.btn-close').click(function() {
+				  $('.modal').hide()
 			  });
 			});
 		</script>

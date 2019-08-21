@@ -569,14 +569,21 @@ h1 {
 }
 
 .software-img {
+    display: block;
     background-image: url(../img/grub-pic.png);
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
     position: absolute;
-    top: 122px;
-    left: -122px;
-    width: 931px;
-    height: 760px;
+    left: -70px;
+    bottom: 123px;
+    width: 52%;
+    height: 986px;
 }
+
+    .software-content{
+        background-color: #fff;
+    }
 
 .page-software-flex>div {
     -ms-flex-preferred-size: 55%;
@@ -586,8 +593,8 @@ h1 {
 .page-software-icon {
     display: block;
     position: absolute;
-    top: 116px;
-    left: 760px;
+    top: 117px;
+    left: 45%;
     background-image: url(../img/software-icon.png);
     background-repeat: no-repeat;
     width: 115px;
@@ -631,6 +638,7 @@ h1 {
     display: flex;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    flex-wrap: wrap;
     list-style-type: none;
     padding-left: 0px;
     margin-top: 76px;
@@ -1452,6 +1460,31 @@ h1 {
     }
 }
 
+/* 1300 */
+@media (max-width: 1300px) {
+    .software-img {
+        display: none;
+    }
+    .page-software-flex>div {
+        flex-basis: 100%;
+    }
+
+    .page-software {
+        background-image: none;
+        padding: 92px 0px 120px;
+    }
+
+    .page-software-icon {
+        left: 55%;
+    }
+
+    .page-software-list {
+        margin-right: 35px; 
+    }
+
+    }
+
+
 /* 1100 */
 @media (max-width: 1100px) {
     .nav, .screen-img {
@@ -1480,10 +1513,12 @@ h1 {
     .page-header {
         padding: 53px 0 150px;
     }
-}
 
-/* 1050 */
-@media (max-width: 1050px) {
+    .content-app {
+        width: 100%;
+        text-align: center;
+    }
+
     .list-company-item {
         -ms-flex-preferred-size: 50%;
             flex-basis: 50%;
@@ -1555,8 +1590,38 @@ h1 {
     .box-subscribe-user .btn-primary { 
         padding: 10px;
         top: 18px;
-        
     }
+
+    .page-software-icon, .intro, .obj-circle, .obj-rectangle {
+        display: none;
+    }
+
+}
+
+    /* 700 */
+@media (max-width: 700px) {
+        .page-stat {
+            padding: 62px 0 50px;
+        }
+
+        .list-stat>li {
+        flex-basis: 34%;
+        margin-bottom: 30px;
+    }
+
+        .grid {
+            grid-template-areas: "a"
+                                "b"
+                                "c"
+                                "d"
+                                "e"
+                                "f"
+                                "g"
+                                "h";
+            grid-template-columns: 1fr;
+        }
+
+}
 
     /* 600 */
     @media (max-width: 600px) {
@@ -1590,6 +1655,11 @@ h1 {
             text-align: center;
             padding: 15px 40px;
         }
-    }
 
-}
+        .list-company-item {
+            -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
+            margin-bottom: 50px;
+        }
+
+    }

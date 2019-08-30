@@ -582,7 +582,7 @@ h1 {
     left: -70px;
     bottom: 123px;
     width: 52%;
-    height: 986px;
+    height: 786px;
 }
 
     .software-content{
@@ -1700,6 +1700,9 @@ h1 {
         color: #192b59;
     }
 
+    .page-software-icon.icon-analitycs {
+        display: none;
+    }
 
 }
 
@@ -1762,6 +1765,10 @@ h1 {
 
     .contact-form {
         align-items: center;
+    }
+
+    .contact-form .btn-primary::before{
+        left: 30px;
     }
 
 }

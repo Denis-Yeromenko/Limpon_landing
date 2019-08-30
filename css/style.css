@@ -118,6 +118,8 @@ h1 {
 
 .nav-item:hover {
     color: #192b59;
+    font-weight: 800;
+    font-size: 14px;
 }
 
 .nav-modal {
@@ -241,7 +243,7 @@ h1 {
     border: none;
     background-color: transparent;
     position: absolute;
-    right: 21px;
+    right: 40px;
     top: 15px;
     font-size: 35px;
     color: #6e7ea9;
@@ -855,7 +857,7 @@ h1 {
     padding: 193px 31px 42px;
 }
 
-.box-team-item .Avatar {
+.box-team-item .avatar {
     position: absolute;
     top: -86px;
     left: 0;
@@ -1325,6 +1327,7 @@ h1 {
     background-position: center;
     padding: 53px 0 330px;
     position: relative;
+    overflow: hidden;
 }
 
 .page-company {
@@ -1595,6 +1598,10 @@ h1 {
         text-align: center;
     }
     
+    .box-subscribe-user {
+        text-align: center;
+    }
+
     .box-subscribe-user .btn-primary { 
         padding: 10px;
         top: 18px;
@@ -1650,10 +1657,6 @@ h1 {
         padding: 40px 0 70px;
     }
 
-    /* .page-software-icon.icon-analitycs {
-        display: none;
-    } */
-
     .flex-analitycs {
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
@@ -1697,6 +1700,70 @@ h1 {
         color: #192b59;
     }
 
+
+}
+
+    /* 900 */
+@media (max-width: 900px) {
+    .page-screen {
+        padding-top: 50px;
+    }
+
+    .page-plan {
+        padding: 40px 0 50px;
+    }
+
+    .box-price {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .box-price-item {
+        margin-bottom: 20px;
+    }
+
+    .page-team {
+        background-image: none;
+        background-color: #1085E4;
+        padding: 40px 0 0;
+    }
+
+    .box-team {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box-team-item {
+        width: 50%;
+        padding-top: 150px;
+        margin-bottom: 100px;
+    }
+
+    .box-team-item .avatar{
+        top: -50px;
+    }
+
+    .page-form {
+        padding: 60px 15px;
+    }
+
+    .flex-form {
+        flex-direction: column;
+    }
+
+    .flex-form img {
+        width: 300px;
+        margin-right: 0;
+    }
+
+    .contact-form-item{
+        width: 100%;
+    }
+
+    .contact-form {
+        align-items: center;
+    }
+
 }
 
     /* 700 */
@@ -1731,6 +1798,16 @@ h1 {
             grid-template-columns: 1fr;
         }
 
+        
+        .box-subscribe-user input {
+            padding-right: 160px;
+            width: 100%;
+        }
+
+        .box-subscribe-user .btn-primary {
+            right: 20px;
+        }
+
         .page-company {
             padding: 40px 0 10px;
         }
@@ -1752,7 +1829,7 @@ h1 {
         .page-clients {
             background-color: #1085E4;
             padding-bottom: 43px;
-            margin-top: 50px;
+            margin-top: 10px;
         }
 
         .page-clients::before {
@@ -1768,6 +1845,8 @@ h1 {
         .box-clients-item {
             margin-bottom: 20px; 
         }
+
+        
       
 }
 
@@ -1813,5 +1892,11 @@ h1 {
             margin-bottom: 50px;
         }
 
+        .box-team-item {
+            width: 80%;
+        }
 
+        .avatar {
+            width: 200px;
+        }
     }

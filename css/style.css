@@ -61,7 +61,7 @@ h1 {
 
 .wrap {
     max-width: 1110px;
-    min-width: 320px;
+    min-width: 270px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
@@ -1739,11 +1739,11 @@ h1 {
     .box-team-item {
         width: 50%;
         padding-top: 150px;
-        margin-bottom: 100px;
+        margin-bottom: 150px;
     }
 
     .box-team-item .avatar{
-        top: -50px;
+        top: -120px;
     }
 
     .page-form {
@@ -1845,6 +1845,7 @@ h1 {
 
         .box-clients {
             flex-direction: column;
+            flex-shrink: 1;
             justify-content: center;
             align-items: center;
         }
@@ -1900,10 +1901,14 @@ h1 {
         }
 
         .box-team-item {
-            width: 80%;
+            width: 65%;
+        }
+
+        .box-team-item .avatar {
+            top: -90px;
         }
 
         .avatar {
-            width: 200px;
+            width: 230px;
         }
     }
